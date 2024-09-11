@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Balloon</title>
+    <style>
+        /* CSS to style the balloon */
+        .balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="balloon" id="balloon"></div>
+
+    <script>
+        // JavaScript to control balloon behavior
+        const balloon = document.getElementById('balloon');
+        let size = 200; // Initial size of the balloon
+        let colors = ['red', 'green', 'blue'];
+        let currentColorIndex = 0;
+
+        balloon.addEventListener('click', () => {
+            // Increase the size of the balloon by 10px
+            if (size < 420) {
+                size += 10;
+                balloon.style.width = size + 'px';
+                balloon.style.height = size + 'px';
+            } else {
+                // Balloon explodes and returns to original size
+                size = 200;
+                balloon.style.width = size + 'px';
+                balloon.style.height = size + 'px';
+            }
+
+            // Change color in order: red -> green -> blue -> red
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+            balloon.style.backgroundColor = colors[currentColorIndex];
+        });
+
+        balloon.addEventListener('mouseleave', () => {
+            // Decrease the size of the balloon by 5px but not below 200px
+            if (size > 200) {
+                size -= 5;
+                balloon.style.width = size + 'px';
+                balloon.style.height = size + 'px';
+            }
+
+            // Change color in reverse order: red <- green <- blue <- red
+            currentColorIndex = (currentColorIndex - 1 + colors.length) % colors.length;
+            balloon.style.backgroundColor = colors[currentColorIndex];
+        });
+    </script>
+</body>
+</html>
