@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+        .header-title {
+            color: white;
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        .shop-images {
+            display: block;
+            text-align: center; /* Centers the content horizontally */
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .shop-images img {
+            margin: 0 10px;
+            width: 200px;
+            height: auto;
+        }
+        .image-container a {
+            display: inline-block; /* Keeps the link inline with the image */
+            margin-top: 10px; /* Adds space between the image and the link */
+            text-decoration: none;
+            color: blue; /* Link color */
+            font-weight: bold;
+        }
+        hr {
+            border: 0;
+            border-top: 2px solid black;
+            width: 100%;
+        }
+        .footer {
+            text-align: right;
+            margin: 20px 10px;
+            font-style: italic;
+            font-family: monospace;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <!--Head-->
+    <h1 class="header-title">Hello Welcome &hearts;</h1>
+
+    <!--Body-->
+    <div class="box">
+            <!--H&M-->
+        <div class="shop-images"> 
+            <img src="https://i.ibb.co/FhJryVg/hnm.png" alt="H&M logo"><br>
+            <a href="https://th.hm.com/th_th/">H&M Website</a>
+        </div>
+            <!--Uniqlo-->
+        <div class="shop-images">
+            <img src="https://i.ibb.co/yhgXTG5/uniqlo.png" alt="uniqlo logo"><br>
+            <a href="https://www.uniqlo.com/th/th/">Uniqlo Website</a>
+        </div>
+    </div>
+    <hr>
+
+    <!--Footer-->
+    <footer class="footer">
+        &copy;csirisae 2024
+    </footer>
+
+    
+
+    
+</body>
+</html>
