@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*  <a href="https://ibb.co/Vgwkkp5"><img src="https://i.ibb.co/n7PKK8t/Anime-Tokyo.jpg" alt="Anime-Tokyo" border="0"></a>
+<a href="https://ibb.co/R7kGhL2"><img src="https://i.ibb.co/SJ4DQqN/pngtree-an-anime-styled-illustration-of-an-autumn-street-with-vehicles-image-2699860.jpg" alt="pngtree-an-anime-styled-illustration-of-an-autumn-street-with-vehicles-image-2699860" border="0"></a> */
+.section-bg {
+    background-image: url('https://i.ibb.co/n7PKK8t/Anime-Tokyo.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.section-bottom {
+    background-image: url('https://i.ibb.co/SJ4DQqN/pngtree-an-anime-styled-illustration-of-an-autumn-street-with-vehicles-image-2699860.jpg" alt="pngtree-an-anime-styled-illustration-of-an-autumn-street-with-vehicles-image-2699860'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.centered-text h1, .centered-text h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.centered-text p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    font-size: 2em;
+}
